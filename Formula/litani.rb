@@ -8,6 +8,12 @@ class Litani < Formula
       revision: "e95f1e601ab62def0f3350906355978741b63830"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any,                 big_sur:      "c8daad0a1bcc3469225f1786e4f50f9bae1603ae0a534d85fe47ac895f2f2f05"
+    sha256 cellar: :any,                 catalina:     "59ffa8b5f86e52f7bb530ec81b95d527b10f71a4f70d61663d051e6ef4936afb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1041d17e0bceeb030fcdb5e1872248cb5180d5fd043622154894deffb9682f6e"
+  end
+
   depends_on "coreutils" => :build
   depends_on "mandoc" => :build
   depends_on "scdoc" => :build
